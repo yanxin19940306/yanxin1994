@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "microsoft yahei", "sans-serif";
+}
+ul{
+    list-style:none;
+}
+#main{
+    width: 640px;
+    height: 960px;
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left: -320px;
+    -webkit-transform-origin: top;
+}
+.slide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.slide li:nth-child(1){
+    background: url(images/58pic_523f5fca5b2c7.png) no-repeat;
+    background-size: 100% 100%;
+}
+.slide li:nth-child(2){
+    background: url(images/51e9005557679.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.slide li:nth-child(3){
+    background: url(images/z.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.slide li:nth-child(4){
+    background: url(images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.zIndex {
+    z-index: 111;
+}
+
+.a1{
+
+    position: absolute;
+    bottom: -100%;
+    right: 9%;
+    -webkit-transform: rotate(-35deg);
+    color: rgb(40, 4, 250);
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+#a1{
+    -webkit-animation: myMove1 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes myMove1 {
+    0%{
+        bottom: -100%;
+    }
+    50%{
+        bottom: 50%;
+    }
+    100%{
+        bottom: 7%;
+    }
+}
+
+.j{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 111;
+}
+
+.a2{
+    width: 80%;
+    margin: 5% 10%;
+    font-size: 30px;
+    color: #001100;
+}
+.a{
+    font-weight: bold;
+    font-size: 35px;
+}
+.a span{
+    font-size: 30px;
+    font-weight: normal;
+}
+.a2 p{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    color: #B1D410;
+}
+#a2 p{
+    -webkit-transform: rotateY(720deg);
+    -webkit-transition: 0.5s;
+}
+
+.a3{
+    margin: 0 5%;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+.a3 p{
+    position: absolute;
+    top: 2%;
+    left:0;
+    margin: 0 5%;
+    width: 90%;
+    height: 22.5%;
+    background: #B1D410;
+    opacity: 0;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    font-size: 22px;
+    padding: 5px;
+    color: blue;
+}
+.a3 p:nth-child(2){
+    top: 26.5%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    color: #440044;
+}
+.a3 p:nth-child(3){
+    top: 51%;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    color: #bf4055;
+}
+.a3 p:nth-child(4){
+    top: 75.5%;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    color: #842210;
+}
+#b3{
+    -webkit-animation-name: myMove;
+    animation-name: myMove;
+
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes myMove {
+    25% {
+        left: -75%;
+        opacity: 0.2;
+    }
+    50%, 100% {
+        left: 0;
+        opacity: 1;
+    }
+    75% {
+        left: 75%;
+        opacity: 0;
+    }
+}
+
+@keyframes myMove {
+    25% {
+        left: -75%;
+        opacity: 0.2;
+    }
+    50%, 100% {
+        left: 0;
+        opacity: 1;
+    }
+    75% {
+        left: 75%;
+        opacity: 0;
+    }
+}
+.a4 p{
+    position: absolute;
+    margin: 0 5%;
+    width: 90%;
+    top: 10%;
+    left: -100%;
+    background: #a2e45c;
+    height: 30%;
+    box-shadow: 1px 1px 10px #ccc;
+    font-size: 25px;
+
+}
+.a4 p:nth-child(2){
+    top: 50%;
+}
+.a4 p span{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0;
+    border-bottom: 2px solid #ffd455;
+}
+.a4 p a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 5% 15% 0 15%
+}
+#b4{
+    -webkit-animation: yi  1s linear both;
+    animation: yi 1s linear  both;
+}
+
+@-webkit-keyframes yi {
+    25% {
+        left: -75%;
+    }
+    50% {
+        left: 0;
+    }
+    75% {
+        left: 75%;
+    }
+    100% {
+        left: 0;
+        -webkit-transform:rotate(360deg) ;
+    }
+}
+@keyframes yi {
+    25% {
+        left: -75%;
+    }
+    50% {
+        left: 0;
+    }
+    75% {
+        left: 75%;
+    }
+    100% {
+        left: 0;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+
